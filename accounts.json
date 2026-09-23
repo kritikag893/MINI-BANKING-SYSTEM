@@ -1,0 +1,94 @@
+{
+    "12345678": {
+        "name": "kritika",
+        "pin": "1234",
+        "balance": 2500.0,
+        "transactions": [
+            "Deposited INR  500.0"
+        ]
+    },
+    "09876543": {
+        "name": "nehal",
+        "pin": "0987",
+        "balance": 4000.0,
+        "transactions": []
+    },
+    "86046430": {
+        "name": "kritika gupta",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 2000.0,
+        "transactions": []
+    },
+    "21345678": {
+        "name": "sonali",
+        "pin": "daab3aa68185b677bd3c8d63f12e48eacb0851d98d635137e531fd579a452486",
+        "balance": 2000.0,
+        "transactions": []
+    },
+    "32145678": {
+        "name": "sonali",
+        "pin": "fe2592b42a727e977f055947385b709cc82b16b9a87f88c6abf3900d65d0cdc3",
+        "balance": 2000.0,
+        "transactions": []
+    },
+    "12345432": {
+        "name": "tanvi",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 2000.0,
+        "transactions": []
+    },
+    "95591020": {
+        "name": "vandana",
+        "pin": "9202e9fdff409bdf59f38ff72334168ed4b60931590be97ea0ca9f7ed7cd5518",
+        "balance": 2410.0,
+        "transactions": [
+            "Deposited INR 2.0",
+            "Withdrawn INR 3.0",
+            "Received INR 200.0 from 12344321",
+            "Deposited INR 67.0",
+            "Withdrawn INR 56.0",
+            "Received INR 200.0 from 87878787"
+        ]
+    },
+    "88406587": {
+        "name": "dev",
+        "pin": "197eb73ac8e7a845a3af30eb206ec9bd76f54ee83e40c0d275d8aa70e7c5a25d",
+        "balance": 6000.0,
+        "transactions": []
+    },
+    "12344321": {
+        "name": "usha",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 1799.0,
+        "transactions": [
+            "Deposited INR 2.0",
+            "Withdrawn INR 3.0",
+            "Transferred INR 200.0 to 95591020"
+        ]
+    },
+    "38291463": {
+        "name": "hbve",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 1234.0,
+        "transactions": []
+    },
+    "67676767": {
+        "name": "akansha",
+        "pin": "d07164a628596323ebcf8796dee0e5c164620e0922b52483bc805f54416ee73c",
+        "balance": 1999.0,
+        "transactions": [
+            "Deposited INR 2.0",
+            "Withdrawn INR 3.0"
+        ]
+    },
+    "87878787": {
+        "name": "archana",
+        "pin": "fd4d18552b5be40e9d2dd7615973c8ffe9aac393666efab859748c268ed5e49d",
+        "balance": 1799.0,
+        "transactions": [
+            "Deposited INR 2.0",
+            "Withdrawn INR 3.0",
+            "Transferred INR 200.0 to 95591020"
+        ]
+    }
+}
