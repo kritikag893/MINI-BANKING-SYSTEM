@@ -1,3 +1,4 @@
+# hashlib module is used to hash the PIN for security purposes.
 import hashlib
 
 

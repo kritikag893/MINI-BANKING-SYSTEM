@@ -1,3 +1,7 @@
+# calling the hashlib module to hash the PIN for security purposes.
+# importing the save_accounts function from storage.py file to save the accounts to the json file.
+# importing the valid_acc_no, valid_pin, and valid_amt functions from
+#  validation.py file to validate the account number, PIN, and amount respectively.
 import hashlib
 from storage import save_accounts
 from validation import valid_acc_no, valid_pin, valid_amt
@@ -23,7 +27,9 @@ def create_acc(accounts):
         pin = input("Enter 4-digit PIN: ")
 
         if valid_pin(pin):
+            # hashing the PIN using SHA-256 algorithm for security purposes.
             pin_hash = hashlib.sha256(pin.encode()).hexdigest()
+            # breaking the loop if the PIN is valid and hashed.
             break
         else:
             print("Invalid PIN. Please enter a 4-digit PIN.")
@@ -39,6 +45,9 @@ def create_acc(accounts):
         except ValueError:
             print("Invalid amount. Please enter a valid number.")
 
+## creating a new account in the accounts dictionary with the account number as the key and
+#  a dictionary containing the account holder name, hashed PIN, initial balance, and
+#  an empty list for transactions as the value.
     accounts[account_no] = {
         "name": name,
         "pin": pin_hash,

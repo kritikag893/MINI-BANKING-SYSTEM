@@ -3,9 +3,11 @@ from account import create_acc
 from authentication import login
 from banking import banking_menu
 
-
+# calling the load_accounts function to load the accounts from the json file. 
+# If the file is not found, it will return an empty dictionary.
 accounts = load_accounts()
 
+# main menu of the banking system. It will keep running until the user chooses to exit.
 
 while True:
     print("\n=========== MINI BANKING SYSTEM ===========")

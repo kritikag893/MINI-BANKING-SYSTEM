@@ -1,10 +1,11 @@
+# taking the functions from storage.py and validation.py files to use in banking.py file.
 from storage import save_accounts
 from validation import valid_amt
 
 
 def banking_menu(accounts, login_account):
     current_acc = accounts[login_account]
-
+# while loop is used to keep the banking menu running until the user chooses to logout.
     while True:
         print("\n--------Banking Menu--------")
         print("1. Check Balance")
@@ -14,7 +15,7 @@ def banking_menu(accounts, login_account):
         print("5. Transaction History")
         print("6. Account Details")
         print("7. Logout")
-
+# taking the user input for the banking menu options.
         banking_choice = input("Enter your choice: ")
 
         if banking_choice == "1":
@@ -44,11 +45,14 @@ def banking_menu(accounts, login_account):
             print("Invalid  choice. Please try again.")
 
 
+#  Function to check account balance
+
 def check_bal(account):
     print("\nYour current balance is:", account["balance"])
 
 
 def depo_money(account, accounts):
+    # try and except block is used to handle the exception if the user enters an invalid amount.
     try:
         amount = float(input("Enter amount to deposit: "))
 
@@ -62,6 +66,7 @@ def depo_money(account, accounts):
 
             print(
                 "Deposit successful! New balance:",
+            # get() method is used to get the value of the key "balance" from the account dictionary.
                 account.get("balance")
             )
         else:
@@ -83,6 +88,7 @@ def withdraw_money(account, accounts):
 
         else:
             account["balance"] -= amount
+            # append () method is used to add the transaction details to the transactions list in the account dictionary.
             account["transactions"].append(
                 "Withdrawn INR " + str(amount)
             )
@@ -154,6 +160,7 @@ def transaction_his(account):
         for trans in account["transactions"]:
             print(trans)
 
+# Function to show account details
 
 def show_account_details(account, login_account):
     print("\n------Account Details------")
