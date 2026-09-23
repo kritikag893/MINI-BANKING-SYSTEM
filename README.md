@@ -4,24 +4,24 @@
 
 Mini Banking System is a command-line based banking application developed using Python. It allows users to create an account,  log in using a PIN, manage their balance, do transactions, and view their account information.
 
-The project demonstrates the use of Python programming concepts such as functions, conditional statements, loops, exception handling, file handling, JSON data storage, hashing, and modular programming.
+The project shows the use of Python programming concepts such as functions, conditional statements, loops, exception handling, file handling, JSON data storage, hashing, and modular programming.
 
 ## Features
 
-- Create a new bank account
-- Generate and validate an 8-digit account number
+- Create a bank account
+- Generate and valid an 8-digit account number
 - Set a 4-digit PIN
 - Securely store PINs using SHA-256 hashing
 - User login and authentication
 - Check account balance
-- Deposit money
-- Withdraw money
-- Transfer money between accounts
-- View transaction history
+- Depositing money
+- Withdrawing money
+- Transfering money between different accounts
+- View transaction histor of user
 - View account details
 - Logout from the banking system
 - Store account information using JSON storage
-- Input validation and error handling
+- Input validation and error correction
 
 ## Technologies Used
 
@@ -50,12 +50,12 @@ minibankingsystem/
 ### Description of Modules
 
 - **main.py** – Controls the main menu and connects the different modules.
-- **account.py** – Handles account creation and account information.
-- **authentication.py** – Handles user login and PIN verification.
-- **banking.py** – Handles balance checking, deposits, withdrawals, transfers, transaction history, and account details.
-- **storage.py** – Loads and saves account data using JSON.
+- **account.py** – deals with account creation and information.
+- **authentication.py** – deals user login and PIN verification.
+- **banking.py** – deals with balance checking, deposits, withdrawals, transfers, transaction history, and account details.
+- **storage.py** – Loads and saves account data using JSON storage.
 - **validation.py** – Performs input validation for account numbers, PINs, and transaction amounts.
-- **accounts.json** – Stores account information and transaction data.
+- **accounts.json** – Stores account informations and transactions data.
 
 ## Installation and Setup
 
@@ -65,11 +65,11 @@ Install Python 3 on your computer.
 
 **Step 2: Download the Project**
 
-Clone or download this GitHub repository to your computer.
+download this GitHub repository to your computer.
 
 **Step 3: Open the Project**
 
-Open the project folder in Visual Studio Code or another Python-compatible editor.
+Open the project folder in Visual Studio Code .
 
 **Step 4: Run the Program**
 
@@ -144,4 +144,3 @@ The system handles common invalid inputs such as:
 - Adding stronger authentication methods
 - Adding a graphical user interface
 - Moving from JSON storage to a database
-- Adding automated unit tests

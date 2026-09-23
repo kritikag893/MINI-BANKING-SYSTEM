@@ -1,20 +1,20 @@
-# hashlib module is used to hash the PIN for security purposes.
+
 import hashlib
 
 
-def login(accounts):
+def log(accounts):
     print("\n------Login------")
 
-    login_acc = input("Enter account number: ")
-    login_pin = input("Enter PIN: ")
+    lo_acc = input("Enter account number: ")
+    lo_pin = input("Enter PIN: ")
 
-    login_pin_security = hashlib.sha256(login_pin.encode()).hexdigest()
+    lo_pin_security = hashlib.sha256(lo_pin.encode()).hexdigest()
 
-    if login_acc in accounts and login_pin_security == accounts[login_acc]["pin"]:
+    if lo_acc in accounts and lo_pin_security == accounts[lo_acc]["pin"]:
         print("\nLogin successful!")
-        print("Welcome,", accounts[login_acc]["name"])
+        print("Welcome,", accounts[lo_acc]["name"])
 
-        return login_acc
+        return lo_acc
 
     print("\nInvalid account number or PIN. Please try again.")
     return None
